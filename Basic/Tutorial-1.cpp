@@ -2,11 +2,11 @@
 using namespace std;  
 
 int main() {  
-    cout << "Hello everyone, Welcome to C++ programming!" << endl;  
-    return 0;  
+    cout <<"Hello everyone, Welcome to C++ programming!" << endl;  
+    return 0; 
 }
 
-/* 1. #include <iostream>
+/* 1.#include <iostream>
 
 Meaning: This is a preprocessor directive.
 
@@ -16,7 +16,7 @@ iostream allows us to use standard input/output objects like cout (for output) a
 
 
 
-2. using namespace std;
+2.using namespace std;
 
 Meaning: This line tells the compiler to use the standard namespace.
 

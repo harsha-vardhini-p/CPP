@@ -98,3 +98,16 @@ int main()
 
 
 } 
+//Output
+// Enter Account Number: 12345
+// Enter Account Holder Name: John Doe
+// Enter Initial Balance: 1000
+// Enter your choice:
+// 1 for Deposit
+// 2 for Withdraw
+// 1 
+// 500
+// Deposited: 500 
+// Account Number: 12345
+// Account Holder Name: John Doe
+// Balance: 1500  

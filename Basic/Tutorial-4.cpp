@@ -54,7 +54,7 @@ int main() {
 
 auto lets the compiler automatically detect the data type */
 
-/* #include <iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -63,10 +63,12 @@ int main() {
     auto z = 'A';      // char
 
     cout << x << " " << y << " " << z << endl;
+    cout<<sizeof(x)<<" "<<sizeof(y)<<" "<<sizeof(z)<<endl; 
     return 0;
-} */
+} 
 /* Output:
 10 3.14 A
+4 8 1 (size of int, double and char respectively)
 */
 
 

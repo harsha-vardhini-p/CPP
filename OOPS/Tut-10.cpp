@@ -53,3 +53,16 @@ int main() {
 //Derived class B
 //Derived class C
 //Derived class D
+
+/*
+ Without Virtual    With Virtual       
+
+ 2 copies of A      1 shared copy of A 
+ Ambiguity         No ambiguity    
+ Must specify path  Direct access      
+
+
+Why use virtual?
+To ensure only one copy of base class exists in multiple inheritance.
+
+*/

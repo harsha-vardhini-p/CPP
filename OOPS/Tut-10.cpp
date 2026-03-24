@@ -63,6 +63,7 @@ int main() {
 
 
 Why use virtual?
+
 To ensure only one copy of base class exists in multiple inheritance.
 
 */

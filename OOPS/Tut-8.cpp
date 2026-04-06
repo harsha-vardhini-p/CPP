@@ -224,3 +224,75 @@ When using advanced OOP designs
 
 
 */
+
+//Multiple Inheritance
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+class Base1
+{
+    public:
+        int rollNo;
+        int marks[5];
+
+        void getDetails1()
+        {
+            cout<<"Enter roll number: ";
+            cin>>rollNo;
+            
+            cout<<"Enter marks for 5 subjects: ";
+            for(int i=0;i<5;i++)
+            {
+                cin>>marks[i];
+            }
+        }
+};
+
+class Base2
+{
+    public:
+        int projectMarks;
+        void getDetails2()
+        {
+            cout<<"Enter project marks: ";
+            cin>>projectMarks;
+        }
+};
+
+class Derived : public Base1, public Base2
+{
+    public:
+        int total;
+        float average;
+
+        void calculate()
+        {
+            total = 0;
+            for(int i=0;i<5;i++)
+            {
+                total += marks[i];
+            }
+            total += projectMarks;
+            average = total/6.0;
+        }      
+
+        void display()
+        {
+            cout<<"Roll Number: "<<rollNo<<endl;
+            cout<<"Total Marks: "<<total<<endl;
+            cout<<"Average Marks: "<<average<<endl;
+        }
+};
+
+int main()
+{
+    Derived D;
+    D.getDetails1();
+    D.getDetails2();
+    D.calculate();
+    D.display();
+
+    return 0;
+}   
